@@ -1,50 +1,62 @@
-  header img {
-    display: inline-block;
-    vertical-align: top;
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    margin-top: 20px; 
-    margin-left: 60px;
-    background-color: black; 
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 body {
-    height: 125vh;
-    background-color: black;
-    background-size: cover;
-    font-family: sans-serif;
-    margin-top: 80px;
-    padding: 30px;
+    overflow-x: hidden;
+    font-family: 'Lato' , sans-serif;
+    color: #505962;
+
 }
 
-main {
+
+/*--- Navigation --*/
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0,0,0,0.6)!important;
+}
+.navbar-brand img {
+    height: 6rem;
+}
+.navbar-nav li {
+    padding-right: .7rem; 
+}
+.navbar-dark .navbar-nav .nav-link {
     color: white;
+    padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #1ebba3;
+}
+/*--- landing page  --*/
+.home-inner {
+    background-image: url(computers.png);
+
+}
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+
+}
+.caption h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: rgb(212, 211, 211); 
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem 1.rem black;
+    padding-bottom: 1rem;
+}
+.caption h3 {
+    font-size: 2rem;
+    color: rgb(184, 182, 182); 
+    text-shadow: .1rem .1rem .1rem black;
+    padding-bottom: 1.6rem;
+
 }
 
-header {
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 25px 0 black;
-    border-bottom-color: rgb(180, 180, 180);
-    border-bottom-width: 5px;
-}
-
-header * {
-    display: inline;
-}
-
-header li {
-    margin: 20px;
-}
-
-header li a {
-    color: rgb(180, 180, 180);
-    text-decoration: none;
-}
