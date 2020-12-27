@@ -8,6 +8,7 @@ var TxtType = function(el, toRotate, period) {
     this.isDeleting = false;
 };
 
+
 TxtType.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
@@ -16,12 +17,14 @@ TxtType.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
+
     }
 
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
     var that = this;
     var delta = 200 - Math.random() * 100;
+    
 
     if (this.isDeleting) { delta /= 2; }
 
@@ -54,3 +57,6 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+
+Resources
