@@ -88,7 +88,7 @@
         <div class="jumbotron">
             <div class="narrow">
 
-                <div class="col-12">
+                <div class="col-12 narrow text-center">
                     <h3 class="heading">Projects</h3>
                     <div class="heading-underline"></div>
                 </div>
@@ -103,30 +103,38 @@
                             <p>Through Test Driven Development, I created a custom built list class without the use of built-in List or Array methods </p>
 
                         </div>
+                       
 
                     </div><!--- End row-->
 
                 </div> <!--- End narrow -->
             </div> <!--- End jumbotron-->
-
-
-
-
-
-
-
         </div>
-
     </div>
+   <!--- Start portfolio -->
+   
+
+   <!--- Endportfolio -->
+
 
      <!--- Start Contact me section -->
      <div id="Contact" class="offset">
+        <div class="col-12 narrow text-center">
+            <h3 class="heading">Contact Me</h3>
+            <div class="heading-underline"></div>
+        </div>
         <div class="container">
-            <form action="action_page.php">
+            
           
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
           
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="email">Last Name</label>
+              <input type="text" id="email" name="lastname" placeholder="Your last name..">
+
               <label for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           
@@ -140,9 +148,29 @@
               <label for="subject">Subject</label>
               <textarea id="subject" name="subject" placeholder="What can I do for you?.." style="height:200px"></textarea>
           
-              <input type="submit" value="Submit">
+              <script type='text/javascript'>
+
+                function foo() {
+                
+                
+                var user_choice = window.confirm('Thank you for your message! I will be sure to get back to you within 24 hours.');
+                
+                
+                if(user_choice==true) {
+                
+                element.submit()="index.html";  
+                
+                } else {
+                
+                return false;
+                }
+                }
+                
+                </script>
+                
+                <input type="submit" onClick="foo()" value="Submit">
           
-            </form>
+           
           </div>
 
     <script src="~/portfolioSite.js"></script>

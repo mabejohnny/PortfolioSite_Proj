@@ -63,7 +63,7 @@ body {
 
 }
 
-/* Style inputs with type="text", select elements and textareas */
+/* CONTACT US Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
@@ -97,5 +97,6 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
-  
+  /* portfolio section */
+
   
