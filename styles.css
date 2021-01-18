@@ -48,15 +48,16 @@ body {
 
 }
 .caption h1 {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
     font-weight: 700;
     color: rgb(212, 211, 211); 
-    letter-spacing: .3rem;
+    letter-spacing: .5rem;
+    word-spacing: .5rem;
     text-shadow: .1rem .1rem 1rem black;
     padding-bottom: 1rem;
 }
 .caption h3 {
-    font-size: 2rem;
+    font-size: 4rem;
     color: rgb(184, 182, 182); 
     text-shadow: .1rem .1rem .1rem black;
     padding-bottom: 1.6rem;
@@ -98,5 +99,4 @@ input[type=text], select, textarea {
   }
 
   /* portfolio section */
-
-  
+ 
